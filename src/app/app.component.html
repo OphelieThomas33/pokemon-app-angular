@@ -23,7 +23,12 @@
                 <div class="card-stacked">
                     <div class="card-content">
                         <h6> {{ pokemon.name }}</h6>
-                        <p> {{ pokemon.created }}</p>
+                        <p> {{ pokemon.created | date:"dd/MM/yyyy" }}</p>
+                        <span 
+                            *ngFor="let type of pokemon.types" 
+                            class="{{ type | pokemonTypeColor}}">
+                            {{ type }}
+                        </span>
                     </div>
                 </div>
             </div>
