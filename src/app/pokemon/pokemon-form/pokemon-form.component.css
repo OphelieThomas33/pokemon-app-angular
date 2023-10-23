@@ -1,0 +1,10 @@
+/* Tous les champs requis et valides */
+.ng-valid[required] {
+    border-left: 5px solid #42A948;
+}
+
+
+/* Tous les champs invalides qui ne sont pas de type "form" */
+.ng-invalid:not(form) {
+    border-left: 5px solid #A94442;
+}
